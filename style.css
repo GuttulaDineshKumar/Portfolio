@@ -1,0 +1,160 @@
+/* Custom CSS Variables */
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --dark-color: #212529;
+  --light-color: #f8f9fa;
+}
+
+/* General Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  padding-top: 76px;
+}
+#about {
+  position: relative;
+  overflow: hidden; /* Prevent particles from spilling outside */
+  min-height: 100vh; /* Ensure the about section takes full height */
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+section {
+  padding: 80px 0;
+}
+
+/* Header Styles */
+.navbar {
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold; 
+}
+.nav-item{
+  padding: 10px;
+}
+/* General link styles in the navbar */
+.navbar-nav .nav-link {
+  font-weight: bold; 
+  transition: all 0.3s ease; 
+}
+
+/* Hover effect: Bold and color change */
+.navbar-nav .nav-link:hover {
+
+  color: #ffffff; 
+  transform: scale(1.1); 
+  background-color: rgb(89, 161, 250);
+  border-radius: 10px;
+}
+
+/* About Section */
+.profile-img {
+
+    width: 300px; /* Adjust the size as needed */
+    height: 300px; /* Ensure it's a square */
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures the image doesn't stretch */
+    border: 2px solid #ddd; /* Optional: Add a border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+.social-icon {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  color: #007bff; /* You can change the hover color */
+}
+
+.social-icon i {
+  color: #333; /* Default color */
+}
+
+.social-icon:hover i {
+  color: #007bff; /* Change icon color on hover */
+}
+
+/* Skills Section */
+.skill-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Projects Section */
+.card {
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Contact Section */
+.contact-form .form-control {
+  padding: 0.8rem;
+  border-radius: 8px;
+}
+
+.contact-form textarea.form-control {
+  resize: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0;
+  }
+  
+  .profile-img {
+    max-width: 250px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out;
+}

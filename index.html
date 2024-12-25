@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+  <header class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
+    <nav class="container">
+      <a class="navbar-brand fw-bold" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+    <!-- About Section -->
+    <section id="about" class="min-vh-100 d-flex align-items-center position-relative">
+      <div class="container position-relative" style="z-index: 1;">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center">
+            <img src="./public/mypic.jpg" alt="Profile Picture" class="rounded-circle profile-img">
+          </div>
+          <div class="col-md-6">
+            <h1 class="fw-bold mb-4">Hi, I'm Dinesh Kumar Guttula</h1>
+            <p class="lead mb-4">I'm a passionate developer focused on creating beautiful and functional web applications. With expertise in modern web technologies, I bring ideas to life through clean and efficient code.</p>
+            
+            <!-- Social Media Links Section -->
+            <div class="d-flex justify-content-center mb-4">
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/dinesh-kumar-guttula/" target="_blank" class="social-icon mx-3">
+                <i class="bi bi-linkedin fs-2"></i>
+              </a>
+              <!-- GitHub -->
+              <a href="https://github.com/GuttulaDineshKumar" target="_blank" class="social-icon mx-3">
+                <i class="bi bi-github fs-2"></i>
+              </a>
+              <!-- Telegram -->
+              <a href="https://t.me/DineshKumarGuttula" target="_blank" class="social-icon mx-3">
+                <i class="bi bi-telegram fs-2"></i>
+              </a>
+            </div>
+            
+            <!-- Download Resume Button -->
+            <a href="./public/dineshresume.pdf" class="btn btn-primary btn-lg" download="Dinesh_Kumar_Resume.pdf">
+              <i class="bi bi-download me-2"></i>Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>   
+      
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Skills</h2>
+        <div class="row g-4 justify-content-center">
+          <div class="col-6 col-md-3 col-lg-2">
+            <div class="skill-card text-center p-3">
+              <i class="bi bi-filetype-html fs-1 text-primary"></i>
+              <p class="mt-2 mb-0">HTML5</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <div class="skill-card text-center p-3">
+              <i class="bi bi-filetype-css fs-1 text-primary"></i>
+              <p class="mt-2 mb-0">CSS3</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <div class="skill-card text-center p-3">
+              <i class="bi bi-filetype-js fs-1 text-primary"></i>
+              <p class="mt-2 mb-0">JavaScript</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <div class="skill-card text-center p-3">
+              <i class="bi bi-filetype-java fs-1 text-primary"></i>
+              <p class="mt-2 mb-0">Java</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <div class="skill-card text-center p-3">
+              <i class="bi bi-database fs-1 text-primary"></i>
+              <p class="mt-2 mb-0">Oracle</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <div class="skill-card text-center p-3">
+              <img src="public/reactlogo.png" alt="React Logo" className="bi text-primary fs-1" width="50px" height="50px">
+              <p class="mt-2 mb-0">React</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <div class="skill-card text-center p-3">
+              <i class="bi bi-bootstrap fs-1 text-primary"></i>
+              <p class="mt-2 mb-0">Bootstrap</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Projects</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Project 1">
+              <div class="card-body">
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">A brief description of the project and the technologies used in its development.</p>
+                <a href="#" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Project 2">
+              <div class="card-body">
+                <h5 class="card-title">Project 2</h5>
+                <p class="card-text">A brief description of the project and the technologies used in its development.</p>
+                <a href="#" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Project 3">
+              <div class="card-body">
+                <h5 class="card-title">Project 3</h5>
+                <p class="card-text">A brief description of the project and the technologies used in its development.</p>
+                <a href="#" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Contact Me</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+            <form class="contact-form">
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
